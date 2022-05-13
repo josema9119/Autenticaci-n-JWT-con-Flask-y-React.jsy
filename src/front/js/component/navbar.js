@@ -15,6 +15,9 @@ export const Navbar = () => {
           <Link to="/register">
             <button className="btn btn-primary">Register</button>
           </Link>
+          <Link to="/">
+            <button className="btn btn-primary" onClick={()=>(localStorage.removeItem("userToken"))}>Log out</button>
+          </Link>
         </div>
       </div>
     </nav>
